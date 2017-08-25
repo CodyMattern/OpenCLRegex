@@ -106,6 +106,11 @@ kernel void PostRegex(global char * exp, global uint * stack, global char * post
 			post[++k] = pop(stack);
 			stackSize--;
 		}
+
+
+		for (int i = 0; post[i]; i++) {
+		}
+
 	}
 	barrier(CLK_LOCAL_MEM_FENCE | CLK_GLOBAL_MEM_FENCE);
 
